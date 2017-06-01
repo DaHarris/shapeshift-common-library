@@ -14,8 +14,7 @@
       "level2_retries": 3
     },
     "btce": {
-      "apiKey": "8RSY5OB7-I4GJPZGK-Q5S6M865-2QZILIWJ-O0AP996T",
-      "apiSecret": "3eef7e4e594341de707a77a0bf2cb088d22fc2b93c421093094a1bc8364b888f"
+      "baseURL": "https://btc-e.com/api/3/"
     }
   }
 }

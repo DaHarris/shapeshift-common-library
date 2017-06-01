@@ -13,6 +13,8 @@ const TickerSchema = new mongoose.Schema({
 const ExchangeSchema = new mongoose.Schema({
   exchangeID: {type: String, required: true, unique: true},
   exchangeName: {type: String, required: true, unique: true},
+  activeSymbols: [String],
+  reserveSymbols: [String],
   tickers: [TickerSchema]
 })
 

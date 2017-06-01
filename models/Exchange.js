@@ -1,5 +1,12 @@
 const mongoose = require('mongoose')
 
+const SymbolSchema = new mongoose.Schema({
+  symbol: {type: String, required: true},
+  exchangeSymbol: {type: String, required: true},
+  longName: String,
+  active: Boolean
+})
+
 const TickerSchema = new mongoose.Schema({
   symbol: {type: String, required: true, unique: true},
   exchangeSymbol: {type: String, required: true, unique: true},
@@ -13,8 +20,7 @@ const TickerSchema = new mongoose.Schema({
 const ExchangeSchema = new mongoose.Schema({
   exchangeID: {type: String, required: true, unique: true},
   exchangeName: {type: String, required: true, unique: true},
-  activeSymbols: [String],
-  reserveSymbols: [String],
+  symbolStatus: [SymbolSchema],
   tickers: [TickerSchema]
 })
 

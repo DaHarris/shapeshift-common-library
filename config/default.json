@@ -15,6 +15,12 @@
     },
     "btce": {
       "baseURL": "https://btc-e.com/api/3/"
+    },
+    "poloniex": {
+      "baseURL": "https://poloniex.com/public"
+    },
+    "bittrex": {
+      "baseURL": "https://bittrex.com/api/v1.1/public"
     }
   }
 }

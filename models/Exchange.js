@@ -8,8 +8,8 @@ const SymbolSchema = new mongoose.Schema({
 })
 
 const TickerSchema = new mongoose.Schema({
-  symbol: {type: String, required: true, unique: true},
-  exchangeSymbol: {type: String, required: true, unique: true},
+  symbol: {type: String, required: true},
+  exchangeSymbol: {type: String, required: true},
   high: Number,
   low: Number,
   last: Number,

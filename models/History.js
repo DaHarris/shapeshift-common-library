@@ -10,7 +10,7 @@ const HistorySchema = new mongoose.Schema({
 })
 
 const TickerSchema = new mongoose.Schema({
-  symbol: {type: String, required: true, unique: true},
+  symbol: {type: String, required: true},
   timeStamp: Number,
   history: [HistorySchema]
 })

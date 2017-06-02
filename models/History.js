@@ -11,13 +11,11 @@ const HistorySchema = new mongoose.Schema({
 
 const TickerSchema = new mongoose.Schema({
   symbol: {type: String, required: true, unique: true},
-  exchangeSymbol: {type: String, required: true, unique: true},
   timeStamp: Number,
   history: [HistorySchema]
 })
 
 const ExchangeSchema = new mongoose.Schema({
-  exchangeID: {type: String, required: true, unique: true},
   exchangeName: {type: String, required: true, unique: true},
   tickers: [TickerSchema]
 })

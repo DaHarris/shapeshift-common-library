@@ -40,5 +40,20 @@
       "level1_retries": 3,
       "level2_retries": 3
     }
+  },
+  "shapeshift-historical-pricing-api": {
+    "port": 3002,
+    "mongoDBConnection": "mongodb://localhost/pricingHistory",
+    "rabbitMQ": {
+      "user": "guest",
+      "pass": "guest",
+      "port": 5672,
+      "timeout": 30000,
+      "server": ["localhost"],
+      "vhost": "%2f",
+      "replyQueue": false,
+      "level1_retries": 3,
+      "level2_retries": 3
+    }
   }
 }

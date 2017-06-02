@@ -20,7 +20,7 @@
       "baseURL": "https://poloniex.com/public"
     },
     "bittrex": {
-      "baseURL": "https://bittrex.com/api/v1.1/public"
+      "baseURL": "https://bittrex.com/api/v1.1/public/"
     }
   }
 }

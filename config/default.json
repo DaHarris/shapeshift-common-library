@@ -1,5 +1,5 @@
 {
-  "shapeshift-external-api": {
+  "shapeshift-exchange-management-api": {
     "port": 3000,
     "mongoDBConnection": "mongodb://localhost/exchanges",
     "rabbitMQ": {
